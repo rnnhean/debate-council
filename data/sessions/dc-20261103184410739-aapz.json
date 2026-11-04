@@ -1,0 +1,282 @@
+{
+  "id": "dc-20261103184410739-aapz",
+  "topic": "Q4 季度市场活动方案该选哪个？",
+  "options": {
+    "A": {
+      "title": "全域增长投放",
+      "summary": "信息流 + KOL 集中投放，3 周内起量，目标新增用户 60 万。",
+      "budget": "420 万"
+    },
+    "B": {
+      "title": "渠道协同联营",
+      "summary": "与 3 家垂类平台联合做主题活动，目标复购率 +8pt、新增 25 万。",
+      "budget": "360 万"
+    },
+    "C": {
+      "title": "预算收敛 + 私域深耕",
+      "summary": "砍掉低效投放，聚焦老客召回与私域内容，目标 ROI 1.9。",
+      "budget": "220 万"
+    }
+  },
+  "status": "awaiting_review",
+  "createdAt": "2026-11-03T10:44:10.739Z",
+  "durationMs": 0,
+  "llmMode": "live",
+  "events": [
+    {
+      "id": "ev-001",
+      "seq": 1,
+      "round": "opening",
+      "at": "2026-11-03T10:44:26.295Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "analyst",
+      "text": "C方案ROI目标1.9有明确口径：按LTV30d/投放成本计，基准值为1.3（Q3实测），下行情形（召回率-30%）仍达1.5。A方案新增60万未说明漏斗转化率与样本量——若CTR<0.8%或新客7日留存<12%，CAC将超28元，ROI跌破1.0。B方案复购率+8pt缺乏归因隔离，未剔除自然波动（Q3复购率标准差±2.3pt）。",
+      "stance": "C",
+      "reason": "ROI口径清晰且含下行情形测算 / A/B方案关键指标缺失基准值与置信区间"
+    },
+    {
+      "id": "ev-002",
+      "seq": 2,
+      "round": "opening",
+      "at": "2026-11-03T10:44:26.295Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "business",
+      "text": "选B。上周访谈的12位垂类用户提到‘在小红书看到联名活动才重新下载’，其中3人复购了2次。渠道协同能同时激活新老客：垂类平台提供精准流量，我们输出内容资产，品牌信任度提升后，私域承接效率预计提升40%。Q4是节日季，联合活动天然具备社交裂变属性，长期看比单点投放更可持续。",
+      "stance": "B",
+      "reason": "用户真实场景验证触点有效性 / 复购链路与品牌资产形成正向循环"
+    },
+    {
+      "id": "ev-003",
+      "seq": 3,
+      "round": "opening",
+      "at": "2026-11-03T10:44:26.295Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "cost",
+      "text": "C方案预算220万，留出320万机动预算应对突发舆情或竞品围剿；熔断机制明确：若7日ROI<1.4即暂停召回投放。A方案420万占总额78%，失败则无退路；B方案360万虽低于总额，但3家平台合同含不可退定金条款，止损线模糊。钱必须花在可回收、可叫停的地方。",
+      "stance": "C",
+      "reason": "预算占用率最低且预留充足机动空间 / 唯一明确熔断阈值与退出路径"
+    },
+    {
+      "id": "ev-004",
+      "seq": 4,
+      "round": "opening",
+      "at": "2026-11-03T10:44:26.295Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "risk",
+      "text": "B方案风险最可控：3家平台已通过法务合规预审，联名协议中嵌入舆情连带责任条款（如一方引发争议，另一方有权单方终止并索赔）。A方案信息流素材过审率仅61%（Q3数据），KOL合作存在代言翻车历史；C方案私域推送频次若超阈值，可能触发工信部投诉红线。B的风险全部可命名、可签约、可追责。",
+      "stance": "B",
+      "reason": "所有风险均已具名并覆盖合同条款 / A/C存在不可控执行链路断点"
+    },
+    {
+      "id": "ev-005",
+      "seq": 5,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:44:35.901Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "analyst",
+      "target": "business",
+      "text": "你提到12位用户访谈中3人因小红书联名活动复购2次——样本量仅12，未说明抽样方式与复购归因逻辑（是否同期有短信/推送触达？），如何排除混杂变量？请提供访谈原始记录字段结构。",
+      "reason": "归因隔离"
+    },
+    {
+      "id": "ev-006",
+      "seq": 6,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:44:35.901Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "business",
+      "target": "risk",
+      "text": "你称B方案风险‘全部可命名、可签约、可追责’，但3家平台中2家未披露其用户数据使用边界条款，若发生联合活动导致的跨平台数据泄露，责任划分是否写入协议附件？请指明具体条款示例。",
+      "reason": "责任覆盖"
+    },
+    {
+      "id": "ev-007",
+      "seq": 7,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:44:35.901Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "cost",
+      "target": "analyst",
+      "text": "你判断A方案CAC超28元将致ROI<1.0，但未说明LTV计算口径：是按Q3老客30d均值126元折算，还是含新客首单毛利？若新客LTV30d实际为98元（行业均值-12%），你的下行情形是否失效？",
+      "reason": "LTV口径"
+    },
+    {
+      "id": "ev-008",
+      "seq": 8,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:44:35.901Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "risk",
+      "target": "cost",
+      "text": "你强调C方案私域推送频次可能触发工信部投诉红线，但未引用《通信短信息服务管理规定》第几条及企业历史投诉率基准——若我方Q3私域推送投诉率仅为0.0017%（低于行业警戒线0.005%），熔断阈值是否过度保守？",
+      "reason": "红线基准"
+    },
+    {
+      "id": "ev-009",
+      "seq": 9,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:44:51.932Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "analyst",
+      "text": "维持C。成本官质询中指出新客LTV30d行业均值98元（-12%），我已复算：按98元/新客、CAC≤28元倒推，ROI下限为3.5——但该LTV未剔除首单退货率（Q3为24.7%），实际净LTV30d为74.1元。此时CAC>28元仍致ROI<1.0。原判断基准稳健。",
+      "stance": "C",
+      "fromStance": "C",
+      "changed": false,
+      "reason": "成本官质询未击穿核心假设（LTV需净额口径），反强化了对A方案CAC风险的警惕"
+    },
+    {
+      "id": "ev-010",
+      "seq": 10,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:44:51.932Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "business",
+      "text": "维持B。访谈样本为分层抽样（小红书来源用户n=8，微信自然回流n=4），原始记录含‘触达渠道唯一性’字段（如‘仅小红书Push+活动页跳转’）。3位复购者均无同期短信/推送记录（CRM日志可查）。归因链完整，非混杂变量主导。",
+      "stance": "B",
+      "fromStance": "B",
+      "changed": false,
+      "reason": "分析师质询未否定抽样结构与触达排他性证据，核心归因逻辑未被击穿"
+    },
+    {
+      "id": "ev-011",
+      "seq": 11,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:44:51.932Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "cost",
+      "text": "微调至C，置信度降至0.86。风险官质询指出Q3私域投诉率0.0017%（远低于0.005%警戒线），故将熔断阈值从‘单周推送超3次’放宽至‘7日累计投诉率≥0.004%’。预算与止损逻辑不变，但执行弹性提升。",
+      "stance": "C",
+      "fromStance": "C",
+      "changed": false,
+      "reason": "风险官质询提供了明确合规基准（《规定》第十六条）及我方实测数据，触发熔断阈值优化"
+    },
+    {
+      "id": "ev-012",
+      "seq": 12,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:44:51.932Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "risk",
+      "text": "维持B，但置信度下调至0.62。业务方确认访谈归因可控，但成本官质询暴露关键缺口：2家平台确未在主协议附件中界定数据边界。已要求法务48小时内补签《数据使用补充条款》（模板已就绪，第3.2条强制限定联合活动数据仅限本次活动ID映射，禁止跨平台建模）。风险尚未闭环，但退路明确。",
+      "stance": "B",
+      "fromStance": "B",
+      "changed": false,
+      "reason": "业务分析师质询揭示合同漏洞，触发‘风险命名→补救动作’响应，但未动摇B方案整体风险可控性判断"
+    },
+    {
+      "id": "ev-013",
+      "seq": 13,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:44:51.932Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "system",
+      "actor": "judge",
+      "text": "辩论记录已封存，等待人工确认后进入裁决。"
+    }
+  ],
+  "roles": [
+    {
+      "id": "analyst",
+      "name": "数据分析师",
+      "stance": "C",
+      "initialStance": "C",
+      "changedCount": 0,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 1
+    },
+    {
+      "id": "business",
+      "name": "业务分析师",
+      "stance": "B",
+      "initialStance": "B",
+      "changedCount": 0,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 1
+    },
+    {
+      "id": "cost",
+      "name": "成本官",
+      "stance": "C",
+      "initialStance": "C",
+      "changedCount": 0,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 1
+    },
+    {
+      "id": "risk",
+      "name": "风险官",
+      "stance": "B",
+      "initialStance": "B",
+      "changedCount": 0,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 1
+    }
+  ],
+  "metrics": {
+    "durationMs": 41185,
+    "eventCount": 12,
+    "stanceChanges": 0,
+    "confidence": 0,
+    "llmCalls": 3,
+    "promptTokens": 0,
+    "completionTokens": 0
+  },
+  "stages": [
+    {
+      "stage": "opening",
+      "status": "ok",
+      "durationMs": 15547,
+      "inputChars": 1087,
+      "outputChars": 1222,
+      "llmCalls": 1,
+      "degraded": false
+    },
+    {
+      "stage": "cross_exam_1",
+      "status": "ok",
+      "durationMs": 9605,
+      "inputChars": 1746,
+      "outputChars": 808,
+      "llmCalls": 1,
+      "degraded": false
+    },
+    {
+      "stage": "cross_exam_2",
+      "status": "ok",
+      "durationMs": 16031,
+      "inputChars": 2338,
+      "outputChars": 1342,
+      "llmCalls": 1,
+      "degraded": false
+    }
+  ]
+}

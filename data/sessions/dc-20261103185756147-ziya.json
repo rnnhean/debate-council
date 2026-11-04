@@ -1,0 +1,368 @@
+{
+  "id": "dc-20261103185756147-ziya",
+  "topic": "Q4 季度市场活动方案该选哪个？",
+  "options": {
+    "A": {
+      "title": "全域增长投放",
+      "summary": "信息流 + KOL 集中投放，3 周内起量，目标新增用户 60 万。",
+      "budget": "420 万"
+    },
+    "B": {
+      "title": "渠道协同联营",
+      "summary": "与 3 家垂类平台联合做主题活动，目标复购率 +8pt、新增 25 万。",
+      "budget": "360 万"
+    },
+    "C": {
+      "title": "预算收敛 + 私域深耕",
+      "summary": "砍掉低效投放，聚焦老客召回与私域内容，目标 ROI 1.9。",
+      "budget": "220 万"
+    }
+  },
+  "status": "completed",
+  "createdAt": "2026-11-03T10:57:56.147Z",
+  "durationMs": 65,
+  "llmMode": "mock",
+  "events": [
+    {
+      "id": "ev-001",
+      "seq": 1,
+      "round": "opening",
+      "at": "2026-11-03T10:57:56.161Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "analyst",
+      "text": "按上季度口径，全域投放的 CAC 是 46 元，私域召回是 31 元，但召回池只有 18 万可触达用户。若目标定在新增 60 万，只有 A 的渠道容量撑得住；代价是 CAC 会随量级上抬，我给出止损线：第 3 周 CAC 超过 62 元就砍量。",
+      "stance": "A",
+      "reason": "渠道容量足够覆盖 60 万新增 / CAC 基准 46 元，仍低于 LTV 的 1/3 / 有明确的周维度止损口径"
+    },
+    {
+      "id": "ev-002",
+      "seq": 2,
+      "round": "opening",
+      "at": "2026-11-03T10:57:56.161Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "business",
+      "text": "只看新增会漏掉复购。B 的联营能把品牌活动塞进用户已经在用的垂类场景里，复购链路更短。我担心的不是花不出去，是花出去之后用户不来第二次——B 至少把第二次触达写进了合作条款。",
+      "stance": "B",
+      "reason": "复购链路与品牌资产可复利 / 联营方自带场景流量 / 合作条款可约定二次触达"
+    },
+    {
+      "id": "ev-003",
+      "seq": 3,
+      "round": "opening",
+      "at": "2026-11-03T10:57:56.161Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "cost",
+      "text": "A 要吃掉 420 万，占季度预算的 78%，一旦第 3 周数据不达标，剩下 12% 的预算连补救都做不了。C 只花 220 万，把 320 万留成机动预算，而且私域召回的 CAC 最低。我要求在方案里写死熔断线。",
+      "stance": "C",
+      "reason": "预算占用 78%，容错空间过小 / 私域 CAC 最低，下行可控 / 保留机动预算便于中途纠偏"
+    },
+    {
+      "id": "ev-004",
+      "seq": 4,
+      "round": "opening",
+      "at": "2026-11-03T10:57:56.161Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "opening",
+      "actor": "risk",
+      "text": "合规上，A 的信息流素材要走二次审核，KOL 口播的舆情连带责任很难切割；B 的联营合同里有排他条款，法务至少要 10 个工作日。C 的执行链路最短、外部依赖最少，风险敞口最小。",
+      "stance": "C",
+      "reason": "A 的素材与 KOL 舆情风险不可控 / B 的排他条款压缩谈判窗口 / C 的外部依赖最少"
+    },
+    {
+      "id": "ev-005",
+      "seq": 5,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:57:56.162Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "analyst",
+      "target": "business",
+      "text": "B 的复购 +8pt 是基于哪一份基线？如果基线是去年同期的联营活动，样本量和口径是否可比？没有口径的复购提升我不能采信。",
+      "reason": "复购基线口径"
+    },
+    {
+      "id": "ev-006",
+      "seq": 6,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:57:56.162Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "business",
+      "target": "cost",
+      "text": "C 保留 320 万机动预算，但这笔钱在季度内真的能二次立项吗？如果流程上批不下来，机动预算就是纸面数字。",
+      "reason": "机动预算可执行性"
+    },
+    {
+      "id": "ev-007",
+      "seq": 7,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:57:56.162Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "cost",
+      "target": "analyst",
+      "text": "A 的 CAC 46 元是按上季度平均量级算的，量级翻倍后边际 CAC 通常上涨 20%~35%。你的止损线 62 元是否已经包含这个上浮？",
+      "reason": "量级放大后的边际成本"
+    },
+    {
+      "id": "ev-008",
+      "seq": 8,
+      "round": "cross_exam_1",
+      "at": "2026-11-03T10:57:56.162Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "question",
+      "actor": "risk",
+      "target": "analyst",
+      "text": "A 的 3 周起量意味着素材要在 5 个工作日内过审。如果审核退回一次，起量窗口就废了，这个执行风险你打算怎么覆盖？",
+      "reason": "审核窗口与执行链路"
+    },
+    {
+      "id": "ev-009",
+      "seq": 9,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:57:56.163Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "analyst",
+      "text": "成本官问得对：量级翻倍后边际 CAC 我按 +28% 重算，A 的实际 CAC 会到 59 元，离止损线只剩 3 元缓冲。这个缓冲不足以支撑 420 万的下注，我把立场调整为 B，但要求 B 的联营必须带可验证的二次触达指标。",
+      "stance": "B",
+      "fromStance": "A",
+      "toStance": "B",
+      "changed": true,
+      "reason": "边际 CAC 上浮 28% 后 A 的容错空间不足"
+    },
+    {
+      "id": "ev-010",
+      "seq": 10,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:57:56.163Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "stance_change",
+      "actor": "analyst",
+      "text": "数据分析师 将立场从 A 调整为 B",
+      "fromStance": "A",
+      "toStance": "B",
+      "stance": "B",
+      "changed": true,
+      "reason": "边际 CAC 上浮 28% 后 A 的容错空间不足"
+    },
+    {
+      "id": "ev-011",
+      "seq": 11,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:57:56.163Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "business",
+      "text": "复购基线用的是今年 Q2 同垂类联营活动，样本 12.4 万，口径与本次一致；我会把基线写进立项材料，接受数据团队复核。机动预算的质疑我认一半，所以 B 的 360 万里预留 40 万做二次触达的兜底。",
+      "stance": "B",
+      "fromStance": "B",
+      "changed": false,
+      "reason": "补充基线口径，维持 B"
+    },
+    {
+      "id": "ev-012",
+      "seq": 12,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:57:56.163Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "cost",
+      "text": "如果机动预算确实批不下来，那 C 的优势就少了一半。B 愿意把二次触达兜底写进预算，我接受把主方案改成 B，但必须同时保留 C 的熔断条款：月度 ROI 低于 1.2 就停止追加。",
+      "stance": "B",
+      "fromStance": "C",
+      "toStance": "B",
+      "changed": true,
+      "reason": "C 的机动预算可执行性被质疑，B 提供了兜底条款"
+    },
+    {
+      "id": "ev-013",
+      "seq": 13,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:57:56.163Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "stance_change",
+      "actor": "cost",
+      "text": "成本官 将立场从 C 调整为 B",
+      "fromStance": "C",
+      "toStance": "B",
+      "stance": "B",
+      "changed": true,
+      "reason": "C 的机动预算可执行性被质疑，B 提供了兜底条款"
+    },
+    {
+      "id": "ev-014",
+      "seq": 14,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:57:56.163Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "reply",
+      "actor": "risk",
+      "text": "A 的审核风险没有正面回答，所以我仍然不支持 A。B 的排他条款我要求压缩到 3 家平台中的 1 家，法务窗口才能压到 7 个工作日。这一条不满足，我的立场就停在 C。",
+      "stance": "C",
+      "fromStance": "C",
+      "changed": false,
+      "reason": "A 的风险未回应；B 需压缩排他条款"
+    },
+    {
+      "id": "ev-015",
+      "seq": 15,
+      "round": "cross_exam_2",
+      "at": "2026-11-03T10:57:56.163Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "system",
+      "actor": "judge",
+      "text": "辩论记录已封存，等待人工确认后进入裁决。"
+    },
+    {
+      "id": "ev-016",
+      "seq": 16,
+      "round": "verdict",
+      "at": "2026-11-03T10:57:56.210Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "system",
+      "actor": "judge",
+      "text": "人工纠偏意见已注入裁决上下文：请特别说明风险官的意见如何被处理。"
+    },
+    {
+      "id": "ev-017",
+      "seq": 17,
+      "round": "verdict",
+      "at": "2026-11-03T10:57:56.212Z",
+      "latencyMs": 0,
+      "status": "ok",
+      "type": "verdict",
+      "actor": "judge",
+      "text": "成本官指出的边际 CAC 上浮使 A 的容错空间只剩 3 元，A 的高预算下注在执行风险上不成立 | 数据分析师调整立场后，B 获得了「渠道容量 + 复购链路」两侧的证据支持 | B 愿意把二次触达兜底与熔断条款写进预算，回应了成本官与风险官的核心关切",
+      "stance": "B",
+      "reason": "置信度 0.73"
+    }
+  ],
+  "roles": [
+    {
+      "id": "analyst",
+      "name": "数据分析师",
+      "stance": "B",
+      "initialStance": "A",
+      "changedCount": 1,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 2
+    },
+    {
+      "id": "business",
+      "name": "业务分析师",
+      "stance": "B",
+      "initialStance": "B",
+      "changedCount": 0,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 1
+    },
+    {
+      "id": "cost",
+      "name": "成本官",
+      "stance": "B",
+      "initialStance": "C",
+      "changedCount": 1,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 1
+    },
+    {
+      "id": "risk",
+      "name": "风险官",
+      "stance": "C",
+      "initialStance": "C",
+      "changedCount": 0,
+      "questions": 1,
+      "replies": 1,
+      "challengesReceived": 0
+    }
+  ],
+  "metrics": {
+    "durationMs": 65,
+    "eventCount": 17,
+    "stanceChanges": 2,
+    "confidence": 0.73,
+    "llmCalls": 4,
+    "promptTokens": 0,
+    "completionTokens": 0
+  },
+  "stages": [
+    {
+      "stage": "opening",
+      "status": "ok",
+      "durationMs": 2,
+      "inputChars": 1087,
+      "outputChars": 899,
+      "llmCalls": 1,
+      "degraded": false
+    },
+    {
+      "stage": "cross_exam_1",
+      "status": "ok",
+      "durationMs": 1,
+      "inputChars": 1579,
+      "outputChars": 515,
+      "llmCalls": 1,
+      "degraded": false
+    },
+    {
+      "stage": "cross_exam_2",
+      "status": "ok",
+      "durationMs": 1,
+      "inputChars": 2053,
+      "outputChars": 889,
+      "llmCalls": 1,
+      "degraded": false
+    },
+    {
+      "stage": "verdict",
+      "status": "ok",
+      "durationMs": 0,
+      "inputChars": 1944,
+      "outputChars": 281,
+      "llmCalls": 1,
+      "degraded": false
+    }
+  ],
+  "review": {
+    "action": "approve",
+    "note": "请特别说明风险官的意见如何被处理。",
+    "at": "2026-11-03T10:57:56.210Z"
+  },
+  "verdict": {
+    "decision": "B",
+    "confidence": 0.73,
+    "reasons": [
+      "成本官指出的边际 CAC 上浮使 A 的容错空间只剩 3 元，A 的高预算下注在执行风险上不成立",
+      "数据分析师调整立场后，B 获得了「渠道容量 + 复购链路」两侧的证据支持",
+      "B 愿意把二次触达兜底与熔断条款写进预算，回应了成本官与风险官的核心关切"
+    ],
+    "minority": {
+      "roleId": "risk",
+      "text": "风险官坚持 C：B 的排他条款尚未压缩到 7 个工作日窗口，若法务延期，B 的启动时点将晚于 Q4 活动窗口，届时 C 是唯一可执行方案。"
+    }
+  },
+  "completedAt": "2026-11-03T10:57:56.212Z"
+}

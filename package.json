@@ -1,0 +1,31 @@
+{
+  "name": "debate-council",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "多 Agent 辩论决策系统：4 位角色独立开局 → 两轮交叉质询 → 人工确认 → 裁决",
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c cyan,magenta \"pnpm dev:server\" \"pnpm dev:client\"",
+    "dev:server": "tsx watch server/main.ts",
+    "dev:client": "vite",
+    "build": "tsc -p tsconfig.server.json && vite build",
+    "start": "node dist-server/server/main.js",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@fastify/static": "^7.0.4",
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  }
+}
