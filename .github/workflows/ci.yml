@@ -1,0 +1,45 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      # 冒烟测试以 mock 模式启动服务：不调真实模型、不需要任何密钥。
+      LLM_MODE: mock
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # 锁文件是 lockfileVersion 6（pnpm 8 格式），必须钉住 8.x；
+      # pnpm 9/10 读 v6 锁文件跑 --frozen-lockfile 会直接 ERR_PNPM_BROKEN_LOCKFILE。
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8.7.1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Smoke test
+        run: pnpm smoke
